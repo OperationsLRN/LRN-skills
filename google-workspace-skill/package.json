@@ -1,0 +1,32 @@
+{
+  "name": "google-workspace-skill",
+  "version": "1.0.0",
+  "description": "A portable Claude Code skill for monitoring, extracting, and automating workflows across multiple Gmail accounts using Google Workspace MCP.",
+  "main": "functions/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "test:monitoring": "jest test-monitoring.js",
+    "test:extraction": "jest test-extraction.js",
+    "test:automation": "jest test-automation.js",
+    "example:monitor": "node examples/monitor-intelgic.js",
+    "example:extract": "node examples/extract-invoices.js",
+    "example:automate": "node examples/draft-templates.js",
+    "setup:oauth": "bash setup/oauth-setup.sh",
+    "setup:verify": "node setup/verify-setup.js"
+  },
+  "keywords": ["gmail", "email", "mcp", "google-workspace", "automation", "claude-code"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "googleapis": "^120.0.0",
+    "google-auth-library": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

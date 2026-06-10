@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "google-workspace-mcp": {
+      "command": "node",
+      "args": [
+        "path/to/google-workspace-mcp/server.js"
+      ],
+      "env": {
+        "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
+        "GOOGLE_CLIENT_SECRET": "your-client-secret",
+        "CREDENTIALS_PATH": "~/.claude/workspace-credentials",
+        "LOG_LEVEL": "info"
+      }
+    }
+  },
+  "permissions": {
+    "google-workspace-skill": {
+      "gmail.modify": true,
+      "calendar.modify": true,
+      "drive.file": true
+    }
+  },
+  "env": {
+    "GOOGLE_WORKSPACE_SKILL_ROOT": "./",
+    "MEMORY_DIR": "./memory",
+    "POLL_INTERVAL_MS": "60000"
+  }
+}

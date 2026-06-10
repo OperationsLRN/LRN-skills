@@ -1,0 +1,28 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+dist/
+build/
+coverage/
+.jest/
+.nyc_output/
+
+# Sensitive files
+~/.claude/workspace-credentials/
+credentials.json
+client_secret.json
+.claude/workspace-credentials/
+*.pem
+*.key
+*.crt
+
+# Build artifacts
+*.zip
+google-workspace-skill-*.zip
