@@ -7,6 +7,8 @@ Claude Code skill library for OperationsLRN projects.
 Reference skills in your project's CLAUDE.md:
 
 ```markdown
+## Loaded skills — read before matching work
+
 | Task | Skill |
 |------|-------|
 | Gmail fetch/parse | ../LRN-skills/email-organizer/SKILL.md |
@@ -14,20 +16,29 @@ Reference skills in your project's CLAUDE.md:
 | Any `aws` CLI command | ../LRN-skills/aws-cli-safe/SKILL.md |
 | IAM / account setup | ../LRN-skills/aws-account-bootstrap/SKILL.md |
 | Lambda / S3 deploy | ../LRN-skills/deployer/SKILL.md |
+| Output compression / ug-ug | ../LRN-skills/core/SKILL.md |
+| Model routing | ../LRN-skills/core/SKILL.md |
+| Code review | ../LRN-skills/qa/essentials/SKILL.md |
+| QA gates / test generation | ../LRN-skills/qa/suite/SKILL.md |
+| UI / Figma / frontend | ../LRN-skills/design/SKILL.md |
+| Token cost reduction | ../LRN-skills/efficiency/SKILL.md |
 ```
 
-## Skills
+Clone alongside your project repo:
 
-See `REGISTRY.md` for the full index.
+```bash
+git clone https://github.com/OperationsLRN/LRN-skills ../LRN-skills
+```
 
-Each skill folder contains:
-- `SKILL.md` — step-by-step instructions and handoffs
-- `FUNCTIONS.md` — callable functions and external service specs
-- `LESSONS.md` — corrections and improvements from production use
+## Skill map
 
-## AWS context (Lindsey CRM)
+See `REGISTRY.md` for the full index with deduplication notes.
 
-- Account: 201062409857
-- Region: us-east-1
-- Profile: `bot_userLRNgmailprocess`
-- Always pass `--profile bot_userLRNgmailprocess --region us-east-1`
+## License
+
+- `core/` — MIT (free, no restrictions). See `LICENSE-MIT.md`.
+- `qa/`, `design/`, `efficiency/` — Trial license. See `LICENSE-TRIAL.md`.
+
+## Updates
+
+Check `UPDATES.md` — quarterly `git pull` recommended.
