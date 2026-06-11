@@ -29,11 +29,10 @@
 
 | Type | Pattern | Why |
 |---|---|---|
-| Filesystem | `G:\AI\output\incidents\*` | Write incident state + postmortem files |
-| Filesystem | `G:\AI\skills\wip\monitoring\incident-response\runbooks\*` | Read YAML runbooks |
-| Network | `http://192.168.0.206:11434/*` | Ollama Mac mini — phi4-mini classify, qwen2.5:7b postmortem |
-| Network | `http://localhost:11434/*` | Ollama local fallback |
-| Bash | `python G:\AI\skills\wip\notify\notify.py *` | Fire Telegram alerts |
+| Filesystem | `<project>/output/incidents/*` | Write incident state + postmortem files |
+| Filesystem | `<skills>/incident-response/runbooks/*` | Read YAML runbooks |
+| Network | `http://localhost:11434/*` | Ollama local — phi4-mini classify, qwen2.5:7b postmortem |
+| Bash | `python <skills>/notify/notify.py *` | Fire Telegram alerts |
 
 ---
 

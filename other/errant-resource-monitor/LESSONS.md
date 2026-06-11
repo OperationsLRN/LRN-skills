@@ -1,8 +1,8 @@
 # LESSONS: errant-resource-monitor
 
-## 2026-06-03 — Initial build (WebMeet cleanup win + Erik's request)
+## 2026-06-03 — Initial build
 
-**Origin:** WebMeet cleanup discovered orphaned resources post-stack-delete (bill-monitor + aws-to-terraform already built; errant-resource-monitor wraps them into a scheduled monitor). Erik asked for this on AT Dev call 2026-06-03.
+**Origin:** Post-stack-delete cleanup discovered orphaned resources (bill-monitor + aws-to-terraform already built; errant-resource-monitor wraps them into a scheduled monitor).
 
 **Cost Explorer lag:** CE has a 24-hour lag on resource-level data and a 10-minute lag on account-level totals. Don't poll CE immediately after a delete — schedule the billing check 24h later.
 

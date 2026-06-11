@@ -28,7 +28,7 @@
 
 | Service | Endpoint | Auth | Notes |
 |---|---|---|---|
-| Ollama Mac mini | `http://192.168.0.206:11434/api/generate` | None | phi4-mini + qwen2.5:7b |
+| Ollama (local) | `http://localhost:11434/api/generate` | None | phi4-mini + qwen2.5:7b |
 | Ollama local | `http://localhost:11434/api/generate` | None | Fallback |
 | notify skill | `G:\AI\skills\wip\notify\notify.py` | Telegram token via env | P1=red_gate, P2=checkpoint |
 

@@ -1,7 +1,7 @@
 # SKILL: errant-resource-monitor
 
 **Bot:** deployer · developer
-**Role:** Scheduled AWS resource scanner — finds orphaned, untagged, or unexpected resources that are accruing cost without being tracked in any stack or Terraform state. Follow-up to iac-stack-teardown-safety and the WebMeet cleanup win.
+**Role:** Scheduled AWS resource scanner — finds orphaned, untagged, or unexpected resources that are accruing cost without being tracked in any stack or Terraform state. Follow-up to iac-stack-teardown-safety.
 **Ug-ug mode:** full
 **Model:** phi4-mini — classification is deterministic (known-resource vs unknown); sonnet only for anomaly narration
 **Tool compatibility:** Claude Code · Cursor · Codex

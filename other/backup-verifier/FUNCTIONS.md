@@ -37,7 +37,7 @@ None — fully deterministic. No LLM needed.
 targets:
   - name: "PostgreSQL daily backup"
     type: local
-    path: "G:/AI/backups/postgres"
+    path: "/var/backups/postgres"
     max_age_hours: 25
     min_files: 1
     sample_file: "latest.sql.gz"

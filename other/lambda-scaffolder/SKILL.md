@@ -133,25 +133,25 @@ Note: this skill itself uses sonnet for stub body generation and is therefore **
 **Input:**
 ```json
 {
-  "skill_md_path": "G:/AI/skills/wip/fathom-fetcher/SKILL.md",
-  "output_dir": "G:/AI/output/lambda-stubs"
+  "skill_md_path": "<project>/skills/my-lambda/SKILL.md",
+  "output_dir": "<project>/output/lambda-stubs"
 }
 ```
 
 `skill_md_path` — required. Absolute path to the target SKILL.md.
-`output_dir` — optional. Defaults to `G:\AI\output\lambda-stubs\`.
+`output_dir` — optional. Defaults to `<project>/output/lambda-stubs/`.
 
 **Output:**
 ```json
 {
-  "skill": "fathom-fetcher",
+  "skill": "my-lambda",
   "generated": [
     {
-      "function": "fetch_fathom_summaries",
+      "function": "fetch_summaries",
       "files": [
-        "G:/AI/output/lambda-stubs/fathom-fetcher/fetch_fathom_summaries/handler.py",
-        "G:/AI/output/lambda-stubs/fathom-fetcher/fetch_fathom_summaries/main.tf",
-        "G:/AI/output/lambda-stubs/fathom-fetcher/fetch_fathom_summaries/README.md"
+        "<project>/output/lambda-stubs/my-lambda/fetch_summaries/handler.py",
+        "<project>/output/lambda-stubs/my-lambda/fetch_summaries/main.tf",
+        "<project>/output/lambda-stubs/my-lambda/fetch_summaries/README.md"
       ]
     }
   ],
