@@ -92,6 +92,27 @@ the canonical source; `efficiency/SKILL.md` covers the compression-specific exte
 
 ---
 
+## Supplemental Skills — `other/` (trial license)
+
+12 skills added individually — AWS ops, monitoring, scaffolding, and tooling. Covered by `LICENSE-TRIAL.md`.
+
+| Skill | Path | Purpose |
+|-------|------|---------|
+| iam-advisor | `other/iam-advisor/SKILL.md` | Generate least-privilege IAM roles + policies for Lambda, API Gateway, EventBridge |
+| bill-monitor | `other/bill-monitor/SKILL.md` | Daily AWS Cost Explorer alerts when spend spikes |
+| incident-response | `other/incident-response/SKILL.md` | Structured runbook for Lambda/API outages — triage, rollback, postmortem |
+| backup-verifier | `other/backup-verifier/SKILL.md` | Confirm DynamoDB backups ran, check restore integrity |
+| lambda-scaffolder | `other/lambda-scaffolder/SKILL.md` | Generate handler stubs + README when adding new Lambda functions |
+| metrics-aggregator | `other/metrics-aggregator/SKILL.md` | Unified CloudWatch + API Gateway metrics dashboard |
+| errant-resource-monitor | `other/errant-resource-monitor/SKILL.md` | Scan for orphaned/untagged AWS resources accruing cost |
+| api-designer | `other/api-designer/SKILL.md` | Design or document API Gateway spec as OpenAPI 3.0 |
+| db-designer | `other/db-designer/SKILL.md` | DynamoDB schema design + migration planning |
+| typescript-react-patterns | `other/typescript-react-patterns/SKILL.md` | React 19 + TypeScript gotchas and anti-patterns |
+| llm-bench | `other/llm-bench/SKILL.md` | Compare OpenAI models on cost/latency for the todo-suggestions feature |
+| context-mode | `other/context-mode/SKILL.md` | Sandbox tool outputs to prevent Lambda payload dumps from bloating context |
+
+---
+
 ## Deduplication rules
 
 When two kits cover the same capability, use this priority order:

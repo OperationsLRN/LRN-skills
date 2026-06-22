@@ -36,6 +36,7 @@ This trial license covers:
 | `qa/essentials/` | Dev Essentials | 10 skills — code review, arch decisions, release tagging |
 | `design/` | Designer Toolkit | 26 skills — screen building, Figma export, UI prototyping |
 | `efficiency/` | Efficiency Kit | 7 skills — compression, token savings, cost routing |
+| `other/` | Supplemental Skills | 12 skills — AWS ops, monitoring, scaffolding, API/DB design, LLM tooling |
 
 The `core/` folder is covered by the separate MIT license (`LICENSE-MIT.md`).
 
